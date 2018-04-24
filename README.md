@@ -27,14 +27,14 @@ where the source code is organized with CMakeLists. So, before opening it in Vis
 you need to configure the project with the software named CMake.
 
 ### 2. Running and Test:
-####2.1 Default folders in 'data':
+2.1 Default folders in 'data':
 
 "Images" : put your source images in it.
 
 "Cache"  : used to store those mederate results (feature points files, matching point files, topological matrix, etc) that 
 are required by the final alignmnet optimization.
 
-####2.2 Running parameter settings:
+2.2 Running parameter settings:
 
 [a]. set your reference image for alignment      							-->  Variable 'refNo' in Function 'main' in main.cpp. 
 
