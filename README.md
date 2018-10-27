@@ -6,7 +6,7 @@ alignment accuracy. To guanrantee the alignment accuracy, global topological rel
 and then a global optimization on alignment parameters are performed.
 
 This C++ implemented algorithm is described in  
-"Globally Consistent Alignment for Planar Mosaicking via Topology Analysis", Pattern Recognition (PR), Jan. 2017.
+"[Globally Consistent Alignment for Planar Mosaicking via Topology Analysis](http://menghanxia.github.io/papers/Plane_Alignment-PR2016.pdf)", Pattern Recognition (PR), Jan. 2017.
 
 Notice: This program is free for personal, non-profit and academic use.
 All right reserved to CVRS: http://cvrs.whu.edu.cn/
