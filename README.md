@@ -47,4 +47,4 @@ e.g. refNo=-1 means the program selects a reference by topological analysis.
 Besides, to use our preset "data" directory successfully, do not forget to modify the path variable 
 "baseDir" to its absolute path of "Data" in the source file "source/Utils/util.h" [line 16]
 
-So far, you can run the procedure and see the color correction results now.
+So far, you can run the procedure and see the alignment/stitching results now.
