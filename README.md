@@ -17,9 +17,7 @@ Here is an example for demonstration below (image topological graph and alignmen
 
 ## Usage
 ### Dependent Libarary [compulsory]:
-<font color=red>OpenCV 2.4.9 is recommended</font>.
-<font color=red>内容</font> 
-<font color=#0099ff size=7 face="黑体">内容</font>
+<span style="color:red;">OpenCV 2.4.9 is recommended</span>.
 
 ### 1. Project Configure:
 This procedure is developed on *Visual Studio 2010* under *Windows 8.1* system environment,
