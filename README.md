@@ -17,32 +17,28 @@ Here is an example for demonstration below (image topological graph and alignmen
 
 ## Usage
 ### Dependent Libarary [compulsory]:
-OpenCV 2.4.9 is recommended.
+<font color=blue size=72>OpenCV 2.4.9 is recommended</font>.
 
 ### 1. Project Configure:
 This procedure is developed on Visual Studio 2010 under windows8.1 system environment,
 where the source code is organized with CMakeLists. So, before opening it in Visual Studio,
-you need to configure the project with the software named CMake.
+you need to configure the project with CMake.
 
 ### 2. Running and Test:
-2.1 Default folders in 'data':
-
-"Images" : put your source images in it.
-
-"Cache"  : used to store those mederate results (feature points files, matching point files, topological matrix, etc) that 
+2.1 Default folders in 'data':  
+- "Images" : put your source images in it.
+- "Cache"  : used to store those mederate results (feature points files, matching point files, topological matrix, etc) that 
 are required by the final alignmnet optimization.
 
-2.2 Running parameter settings:
-
-[a]. set your reference image for alignment      							-->  Variable 'refNo' in Function 'main' in main.cpp. 
-
+2.2 Running parameter settings:  
+-[a]. set your reference image for alignment      							-->  Variable 'refNo' in Function 'main' in main.cpp 
 e.g. refNo=-1 means the program selects a reference by topological analysis.
 
 [b]. set whether your image set is sequential order or not         --> Variable 'isInorder' in Function 'imageStitcherbyGroup' in alignment.cpp
 
 [c]. set whether your model need global optimization         		--> Variable 'needRefine' in Function 'imageStitcherbyGroup' in alignment.cpp
 
-Besides, to use our preset "data" directory successfully, do not forget to modify the path variable 
-"baseDir" to its absolute path of "Data" in the source file "source/Utils/util.h" [line 16]
+Besides, to use our preset "data" directory successfully, do not forget to update the path variable 
+"*baseDir*" to its absolute path of "Data" in the source file "source/Utils/util.h" [line 16]
 
 So far, you can run the procedure and see the alignment/stitching results now.
