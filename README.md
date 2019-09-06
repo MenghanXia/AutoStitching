@@ -37,6 +37,6 @@ e.g. refNo=-1 means that the program will automatically selects a reference via 
 - Set whether your model need global optimization         		--> Variable '*needRefine*' in Function **imageStitcherbyGroup()** in "*alignment.cpp*"
 
 Besides, to use our preset working directory successfully, do not forget to UPDATE the path variable 
-'*baseDir*' to its absolute path of "*data*" in the source file "*source/Utils/util.h*" [line 16]
+'*baseDir*' as **the absolute path** of your working directory "*data*" in the source file "*source/Utils/util.h*" [line 16]
 
 So far, you can run the procedure and check the alignment/stitching results now.
