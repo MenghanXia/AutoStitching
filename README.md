@@ -25,7 +25,7 @@ where the source code is organized with CMakeLists. So, before opening it in Vis
 you need to configure the project with *CMake*.
 
 ### 2. Running and Test:
-2.1 Default folders in 'data':  
+2.1 Default folders in "*data*":  
 - "*Images*" : put your source images in it.
 - "*Cache*"  : used to store those intermediate results (feature points files, matching point files, topological matrix, etc) that 
 are required by the final alignmnet optimization.
@@ -37,6 +37,6 @@ e.g. refNo=-1 means that the program will automatically selects a reference via 
 - Set whether your model need global optimization         		--> Variable '*needRefine*' in Function **imageStitcherbyGroup()** in "*alignment.cpp*"
 
 Besides, to use our preset working directory successfully, do not forget to UPDATE the path variable 
-'*baseDir*' as **the absolute path** of your working directory "*data*" in the source file "*source/Utils/util.h*" [line 16]
+'*baseDir*' as **the absolute path** of your directory "*data*" in the source file "*source/Utils/util.h*" [line 16]
 
 So far, you can run the procedure and check the alignment/stitching results now.
