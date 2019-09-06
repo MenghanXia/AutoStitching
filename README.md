@@ -27,16 +27,16 @@ you need to configure the project with *CMake*.
 ### 2. Running and Test:
 2.1 Default folders in 'data':  
 - "*Images*" : put your source images in it.
-- "*Cache*"  : used to store those mederate results (feature points files, matching point files, topological matrix, etc) that 
+- "*Cache*"  : used to store those intermediate results (feature points files, matching point files, topological matrix, etc) that 
 are required by the final alignmnet optimization.
 
 2.2 Running parameter settings:  
-- set your reference image for alignment      							-->  Variable '*refNo*' in Function '**main()**' in "*main.cpp*". 
-e.g. refNo=-1 means the program selects a reference by topological analysis.
-- Set whether your image set is sequential order or not         --> Variable '*isInorder*' in Function '**imageStitcherbyGroup()**' in "*alignment.cpp*"
-- Set whether your model need global optimization         		--> Variable '*needRefine*' in Function '**imageStitcherbyGroup()**' in "*alignment.cpp*"
+- Set your reference image for alignment      							-->  Variable '*refNo*' in Function **main()** in "*main.cpp*". 
+e.g. refNo=-1 means that the program will automatically selects a reference via topological analysis.
+- Set whether your image set is sequential order or not         --> Variable '*isInorder*' in Function **imageStitcherbyGroup()** in "*alignment.cpp*"
+- Set whether your model need global optimization         		--> Variable '*needRefine*' in Function **imageStitcherbyGroup()** in "*alignment.cpp*"
 
-Besides, to use our preset "data" directory successfully, do not forget to update the path variable 
-'*baseDir*' to its absolute path of "*Data*" in the source file "*source/Utils/util.h*" [line 16]
+Besides, to use our preset working directory successfully, do not forget to UPDATE the path variable 
+'*baseDir*' to its absolute path of "*data*" in the source file "*source/Utils/util.h*" [line 16]
 
-So far, you can run the procedure and see the alignment/stitching results now.
+So far, you can run the procedure and check the alignment/stitching results now.
