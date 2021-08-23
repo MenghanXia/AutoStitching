@@ -41,7 +41,7 @@ Besides, to use our preset working directory successfully, do not forget to UPDA
 
 So far, you can run the procedure and check the alignment/stitching results now.
 
-### Citation
+## Citation
 If any part of our paper and code is helpful to your work, please generously cite with:
 ```
 @article{DBLP:journals/pr/XiaYXLZ17,
