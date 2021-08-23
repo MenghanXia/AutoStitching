@@ -40,3 +40,16 @@ Besides, to use our preset working directory successfully, do not forget to UPDA
 '*baseDir*' as **the absolute path** of your directory "*data*" in the source file "*source/Utils/util.h*" [line 16]
 
 So far, you can run the procedure and check the alignment/stitching results now.
+
+### Citation
+If any part of our paper and code is helpful to your work, please generously cite with:
+```
+@article{DBLP:journals/pr/XiaYXLZ17,
+  author    = {Menghan Xia and Jian Yao and Renping Xie and Li Li and Wei Zhang},
+  title     = {Globally consistent alignment for planar mosaicking via topology analysis},
+  journal   = {Pattern Recognit.},
+  volume    = {66},
+  pages     = {239--252},
+  year      = {2017}
+}
+```
