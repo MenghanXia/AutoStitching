@@ -33,8 +33,8 @@ are required by the final alignmnet optimization.
 2.2 Running parameter settings:  
 - Set your reference image for alignment      							-->  Variable '*refNo*' [line 16] in [main.cpp](./source/Src/Mosaic/main.cpp). 
 e.g. refNo=-1 means that the program will automatically selects a reference via topological analysis.
-- Set whether your image set is sequential order or not         --> Variable '*isInorder*' [line 16] in [alignment.cpp](./source/Src/Mosaic/alignment.cpp)
-- Set whether your model need global optimization         		--> Variable '*needRefine*' [line 16] in [alignment.cpp](./source/Src/Mosaic/alignment.cpp)
+- Set whether your image set is sequential order or not         --> Variable '*isInorder*' [line 63] in [alignment.cpp](./source/Src/Mosaic/alignment.cpp)
+- Set whether your model need global optimization         		--> Variable '*needRefine*' [line 96] in [alignment.cpp](./source/Src/Mosaic/alignment.cpp)
 
 Besides, to use our preset working directory successfully, do not forget to UPDATE the path variable 
 '*baseDir*' as **the absolute path** of your directory "*data*" in the source file [source/Utils/util.h](source/Utils/util.h) [line 16]
