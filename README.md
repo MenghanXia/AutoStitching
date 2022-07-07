@@ -37,7 +37,7 @@ e.g. refNo=-1 means that the program will automatically selects a reference via 
 - Set whether your model need global optimization         		--> Variable '*needRefine*' [line 96] in [alignment.cpp](./source/Src/Mosaic/alignment.cpp)
 
 Besides, to use our preset working directory successfully, do not forget to UPDATE the path variable 
-'*baseDir*' as **the absolute path** of your directory "*data*" in the source file [source/Utils/util.h](source/Utils/util.h) [line 16]
+'*baseDir*' as **the absolute path** of your directory "*data*" in the source file [source/Utils/util.h](./source/Utils/util.h) [line 16]
 
 So far, you can run the procedure and check the alignment/stitching results now.
 
