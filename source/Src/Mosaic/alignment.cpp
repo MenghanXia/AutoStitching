@@ -52,15 +52,15 @@ void ImageAligner::divideImageGroups()
 
 
 //-------------------------------------------------alignment
-void ImageAligner::imageStitcherbyGroup(int referNo)
+void ImageAligner::imageStitcherbyGroup(int referNo, bool isSeqData, bool loadKeypts, bool loadTopology)
 {
 	//! =============== extract features ===============
-	bool extractFeature = false; //! ### set this for new data
+	bool extractFeature = !loadKeypts; //! ### set this for new data
 	_matcher = new PointMatcher(_filePathList, extractFeature);
 	_imgSizeList = _matcher->_imgSizeList;
 
 	//! =============== Topology sorting ===============
-	bool shallLoad = true, isInOrder = false;     //! ### set this for new data
+	bool shallLoad = loadTopology, isInOrder = isSeqData;     //! ### set this for new data
 	sortImageOrder(referNo, shallLoad, isInOrder);
 
 	//! =============== build match net ===============
@@ -111,14 +111,14 @@ void ImageAligner::imageStitcherbyGroup(int referNo)
 }
 
 
-void ImageAligner::imageStitcherbySolos(int referNo)
+void ImageAligner::imageStitcherbySolos(int referNo, bool isSeqData, bool loadKeypts, bool loadTopology)
 {
 	//! =============== extract features ===============
-	bool extractFeature = false;     //! set this for new data
+	bool extractFeature = !loadKeypts;     //! set this for new data
 	_matcher = new PointMatcher(_filePathList, extractFeature);
 	_imgSizeList = _matcher->_imgSizeList;
 	//! =============== Topology sorting ===============
-	bool shallLoad = true, isInOrder = false;     //! ### set this for new data
+	bool shallLoad = loadTopology, isInOrder = isSeqData;     //! ### set this for new data
 	sortImageOrder(referNo, shallLoad, isInOrder);
 	//	return false;
 	//! =============== build match net ===============
@@ -1720,7 +1720,7 @@ void ImageAligner::drawTopologyNet()
 	CvFont font;
 	double hScale = 1;
 	double vScale = 1;
-	cvInitFont(&font,CV_FONT_HERSHEY_PLAIN, hScale,vScale,0,1);      //定义标记字体
+	cvInitFont(&font,CV_FONT_HERSHEY_PLAIN, hScale,vScale,0,1);      //露篓脪氓卤锚录脟脳脰脤氓
 	vector<Point2i> dotPtList;
 	//! in the order of '_visitOrser'
 	for (i = 0; i < coreLocations.size(); i ++)
@@ -1815,7 +1815,7 @@ void ImageAligner::labelGroupNodes()
 	CvFont font;
 	double hScale = 1;
 	double vScale = 1;
-	cvInitFont(&font,CV_FONT_HERSHEY_PLAIN, hScale,vScale,0,1);      //定义标记字体
+	cvInitFont(&font,CV_FONT_HERSHEY_PLAIN, hScale,vScale,0,1);      //露篓脪氓卤锚录脟脳脰脤氓
 	vector<Point2i> dotPtList;
 	//! label aligning group
 	for (i = 0; i < _groupCusorList.size(); i ++)
