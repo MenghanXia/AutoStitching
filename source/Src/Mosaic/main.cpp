@@ -33,9 +33,12 @@ void main()
 //	}
 //	return;
 	ImageAligner imgAligner(imgPathList);
-	int referNo = -1;
-//	imgAligner.imageStitcherbySolos(referNo);
-	imgAligner.imageStitcherbyGroup(referNo);
+	int referNo = -1;		// which image (the default no is defined as the name sorted) is used as the global reference
+	bool isSeqData = False;		// is the input images are overlapped sequentially as the name sorted
+	bool loadKeypts = False;	// is keypoint file of each image available
+	bool loadTopology = False;	// is topology similarity file available
+//	imgAligner.imageStitcherbySolos(referNo, isSeqData, loadKeypts, loadTopology);
+	imgAligner.imageStitcherbyGroup(referNo, isSeqData, loadKeypts, loadTopology);
 	end_time=clock();
 	cout<<"All done! consumed "<<(end_time-start_time)/CLOCKS_PER_SEC<<" seconds! "<<endl;
 }
