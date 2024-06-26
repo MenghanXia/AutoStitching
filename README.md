@@ -27,14 +27,15 @@ you need to configure the project with *CMake*.
 ### 2. Running and Test:
 2.1 Default folders in "*data*":  
 - "*Images*" : put your source images in it.
-- "*Cache*"  : used to store those intermediate results (feature points files, matching point files, topological matrix, etc) that 
+- "*Cache*" (optional) : used to store those intermediate results (feature points files, matching point files, topological matrix, etc) that 
 are required by the final alignmnet optimization.
 
 2.2 Running parameter settings:  
-- Set your reference image for alignment      							-->  Variable '*refNo*' [line 16] in [main.cpp](./source/Src/Mosaic/main.cpp). 
+- Set your reference image for alignment: 【Variable '*refNo*'】 [line 16] in [main.cpp](./source/Src/Mosaic/main.cpp). 
 e.g. refNo=-1 means that the program will automatically selects a reference via topological analysis.
-- Set whether your image set is sequential order or not         --> Variable '*isInorder*' [line 63] in [alignment.cpp](./source/Src/Mosaic/alignment.cpp)
-- Set whether your model need global optimization         		--> Variable '*needRefine*' [line 96] in [alignment.cpp](./source/Src/Mosaic/alignment.cpp)
+- Set whether your image set is sequential order or not: 【Variable '*isSeqData*'】 [line 38] in [main.cpp](./source/Src/Mosaic/main.cpp)
+- Set whether the image keypoints available in [*Cache*](./data/Cache): 【Variable '*loadKeyPts*'】 [line 39] in [main.cpp](./source/Src/Mosaic/main.cpp)
+- Set whether the inter-image overlap relations available in [*Cache*](./data/Cache): 【Variable '*loadTopology*'】 [line 40] in [main.cpp](./source/Src/Mosaic/main.cpp)
 
 Besides, to use our preset working directory successfully, do not forget to UPDATE the path variable 
 '*baseDir*' as **the absolute path** of your directory "*data*" in the source file [source/Src/Utils/util.h](./source/Src/Utils/util.h) [line 16]
